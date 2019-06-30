@@ -25,10 +25,12 @@ DispatchQueue.global().async { task.title = "Clean kitchen" }
 
 To use Atomic with the Swift Package Manager, add a dependency to your Package.swift file:
 
+```swift
 let package = Package(
     dependencies: [
         .package(url: "https://github.com/shareup/atomic.git", .upToNextMajor(from: "1.0.0"))
     ]
 )
+```
 
 _Linux is not currently supported_
