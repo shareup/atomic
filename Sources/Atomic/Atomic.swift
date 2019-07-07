@@ -2,7 +2,7 @@ import Foundation
 
 @propertyWrapper
 public class Atomic<T> {
-    public var value: T {
+    public var wrappedValue: T {
         get { return _lock.locked { return _value } }
         set { _lock.locked { _value = newValue } }
     }
