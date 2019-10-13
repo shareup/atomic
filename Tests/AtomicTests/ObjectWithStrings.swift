@@ -6,11 +6,11 @@ final class ObjectWithStrings {
     @Atomic(nil) var optionalString: String?
 
     init(string: String, optionalString: String?) {
-        $string = Atomic(string)
-        $optionalString = Atomic(optionalString)
+        _string = Atomic(string)
+        _optionalString = Atomic(optionalString)
     }
 
     init(string: String) {
-        $string = Atomic(string)
+        _string = Atomic(string)
     }
 }
